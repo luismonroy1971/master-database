@@ -1,0 +1,24 @@
+### GET all typefood
+GET http://localhost:4000/typefoods
+
+### create typefood
+POST http://localhost:4000/typefoods
+Content-Type: application/json
+
+	{
+		"description": "Normal (Incluyen  los alimentos de origen vegetal y animal)"
+	}
+
+### GET typefood
+GET http://localhost:4000/typefoods/6338fc89090041ff303190c1
+
+### DELETE typefood
+DELETE http://localhost:4000/typefoods/6338fc89090041ff303190c1
+
+### UPDATE
+PUT http://localhost:4000/typefoods/6338fcb1090041ff303190c7
+Content-Type: application/json
+
+{
+ 	"description": "Normal limitada en carnes rojas"
+}

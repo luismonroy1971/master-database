@@ -1,0 +1,35 @@
+const dateNow= new Date();
+
+### GET all affiliates
+GET http://localhost:4000/affiliates
+
+### create affiliates
+POST http://localhost:4000/affiliates
+Content-Type: application/json
+	
+	{
+
+    	"datebirth": "{{todayDate}}",
+    "email": "lmonroy1971@gmail.com",
+    "fullname": "Luis Fernando Monroy Sovero",
+	}
+
+### GET affiliates
+GET http://localhost:4000/affiliates/63391e4e66251ec3c42db2ef
+
+### DELETE affiliates
+DELETE http://localhost:4000/affiliates/63391e4e66251ec3c42db2ef
+
+### UPDATE
+PUT http://localhost:4000/affiliates/63391e4e66251ec3c42db2ef
+Content-Type: application/json
+
+{
+		"typedocument": "01",
+    	"document": "09739991",
+    	"datebirth": "{{todayDate}}",
+    "email": "lmonroy1971@gmail.com",
+    "phone": "981359723",
+    "lastname": "Monroy Sovero",
+    "firstname": "Luis Fernando"
+	}

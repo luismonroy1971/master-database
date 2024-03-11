@@ -1,0 +1,109 @@
+### GET all foods
+GET http://localhost:4000/foods
+
+### create food
+POST http://localhost:4000/foods
+Content-Type: application/json
+
+	{
+		"code": "F106",
+		"category": "FRUTAS",
+		"subcategory": "FRUTAS CON BAJO  INDICE GLUCEMICO ",
+		"name": "KIWI",
+		"image": "/assets/foods/imgs/F106.png",
+		"nameCientific": "Actinidia deliciosa",
+		"amount": "1 1/2 UND O 150 GR ",
+		"features": "Es el fruto de la actinidia, planta trepadora dela familia de las actinidiáceas. El kiwi es una bayacon forma de elipse y cubierta de una piel repleta de vellosidades. Supiel es de color marrón oscuro, y encierra una pulpa verde y jugosa, desabor ácido muy agradable.",
+		"benefits": "El kiwi aporta una cantidad moderada de hidratos de carbono en forma deazúcares. También posee fibra, fundamentalmente de tipo insoluble. Es fuente de vitamina C, contribuye a la protección de las células frente al daño oxidativo.Contiene una enzima proteolítica (actidina) que ayuda a digerir las proteínas; y miosmina, un alcaloide del tabaco.",
+		"secundaryEffects": "Debido a su alto contenido en vitamina K, aquellas personas que estén tomando medicamentos anticoagulantes deberían consumir el Kiwi con moderación. Aquellas personas con úlceras de estómago o gastritis recomendamos evitar la ingesta del Kiwi debido a que es una fruta ácida que puede producir dolor al aumentar la acidez. Consumo en exceso podrían agravar los dolores de migraña debido a la acumulación de histamina.",
+		"originInformation": "Lista de Intercambio de Alimentos, ADA. 2017/  Tabla de composición de Alimentos de Centroamérica, INCAP.2012/Frutas,Mercado Alimentos FEN, 2018",
+		"energy": {
+			"propertiesPortion": 91.5,
+			"properties100": 61,
+			"codeReplacement": "TORONJA ROSADA"
+		},
+		"carbohydrates": {
+			"propertiesPortion": 21.99,
+			"properties100": 14.66,
+			"codeReplacement": "JUGO DE LIMÓN "
+		},
+		"protein": {
+			"propertiesPortion": 1.71,
+			"properties100": 1.14,
+			"codeReplacement": "MARACUYA (PULPA)"
+		},
+		"fats": {
+			"propertiesPortion": 0.78,
+			"properties100": 0.52,
+			"codeReplacement": "MANDARINA"
+		},
+		"fiber": {
+			"propertiesPortion": 4.5,
+			"properties100": 3,
+			"codeReplacement": "NARANJA"
+		},
+		"calcium": {
+			"propertiesPortion": 51,
+			"properties100": 34,
+			"codeReplacement": ""
+		},
+		"match": {
+			"propertiesPortion": 51,
+			"properties100": 34,
+			"codeReplacement": ""
+		},
+		"iron": {
+			"propertiesPortion": 0.465,
+			"properties100": 0.31,
+			"codeReplacement": ""
+		},
+		"vitamC": {
+			"propertiesPortion": 4.5,
+			"properties100": 3,
+			"codeReplacement": ""
+		},
+		"potassium": {
+			"propertiesPortion": 468,
+			"properties100": 312,
+			"codeReplacement": ""
+		},
+		"zinc": {
+			"propertiesPortion": 0.21,
+			"properties100": 0.14,
+			"codeReplacement": ""
+		},
+		"sodium": {
+			"propertiesPortion": 4.5,
+			"properties100": 3,
+			"codeReplacement": ""
+		},
+		"magnesium": {
+			"propertiesPortion": 25.5,
+			"properties100": 17,
+			"codeReplacement": ""
+		},
+		"b12": {
+			"propertiesPortion": 0,
+			"properties100": 0,
+			"codeReplacement": ""
+		},
+		"vitamA": {
+			"propertiesPortion": 6,
+			"properties100": 4,
+			"codeReplacement": ""
+		}
+	}
+
+### GET food
+GET http://localhost:4000/foods/5f810077ea69c100198323c0
+
+### DELETE food
+DELETE http://localhost:4000/foods/5f810077ea69c100198323c0
+
+### UPDATE
+PUT http://localhost:4000/foods/5f8100a4ea69c100198323c1
+Content-Type: application/json
+
+{
+  "title": "Hello updated"
+}

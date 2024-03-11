@@ -1,0 +1,31 @@
+### GET all initials
+GET http://localhost:4000/initials
+
+### create initials
+POST http://localhost:4000/initials
+Content-Type: application/json
+	{
+		"affiliate": "63391e4e66251ec3c42db2ef",
+		"typefood":"6338fcb1090041ff303190c7",
+		"weight": 70,
+		"height": 1.40,
+		"diseases": ["Prueba", "Prueba2"]
+	}
+
+### GET initials
+GET http://localhost:4000/initials/63392272d3ff142cdfc37287
+
+### DELETE initials
+DELETE http://localhost:4000/initials/6338f4139ca8fd4709d80a02
+
+### UPDATE
+PUT http://localhost:4000/initials/63392272d3ff142cdfc37287
+Content-Type: application/json
+
+ 	{
+		"affiliate": "63391e4e66251ec3c42db2ef",
+		"typefood":"6338fcb1090041ff303190c7",
+		"weight": 70,
+		"height": 1.70,
+		"diseases": ["Prueba", "Prueba2", "Otra pre existencia"]
+	}

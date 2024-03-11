@@ -1,0 +1,24 @@
+### GET all diseases
+GET http://localhost:4000/diseases
+
+### create diseases
+POST http://localhost:4000/diseases
+Content-Type: application/json
+
+	{
+		"nameDisease": "Hígado graso"
+	}
+
+### GET diseases
+GET http://localhost:4000/diseases/6338f4139ca8fd4709d80a02
+
+### DELETE diseases
+DELETE http://localhost:4000/diseases/6338f4139ca8fd4709d80a02
+
+### UPDATE
+PUT http://localhost:4000/diseases/6338f44b9ca8fd4709d80a08
+Content-Type: application/json
+
+{
+ 	"nameDisease": "Hipertensión"
+}
