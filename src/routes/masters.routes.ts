@@ -15,13 +15,17 @@ import {
 import { validateSchema } from "../middlewares/validateSchema.middleware";
 import { CreateMasterSchema } from "../schema/master.schema";
 
-router.get("/masters", getMasters);
+router.get("/masters", 
+validateSchema(CreateMasterSchema),passport.authenticate("jwt", { session: false }),getMasters);
 
-router.get("/masters/:id", getMaster);
+router.get("/masters/:id", 
+validateSchema(CreateMasterSchema),passport.authenticate("jwt", { session: false }),getMaster);
 
-router.get("/masterFind", getMastersSurname);
+router.get("/masterFind", 
+validateSchema(CreateMasterSchema),passport.authenticate("jwt", { session: false }),getMastersSurname);
 
-router.get("/masterDoc", getMastersDoc);
+router.get("/masterDoc", 
+validateSchema(CreateMasterSchema),passport.authenticate("jwt", { session: false }),getMastersDoc);
 
 router.post(
   "/masters",
